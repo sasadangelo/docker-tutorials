@@ -1,2 +1,2 @@
 # Create the PostgreSQL imag.
-docker build -t postgresql .
+docker build src -t postgresql
