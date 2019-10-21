@@ -8,10 +8,10 @@ The application you choose to learn Docker is not very important, what is really
 
 The following is a list of tutorials.
 
-# Hello World
+## Hello World
 
 In this tutorial, I will show you how to create a simple "Hello World!" application. We will create a container with a Web Server (Nginx) listeining on port 80. When the container will be up and running we can connect to it via browser and the "Hello World!" message will appear in it.
 
-# PostgreSQL
+## PostgreSQL
 
 In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on 432 port.
