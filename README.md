@@ -1,6 +1,6 @@
 # Docker Tutorials
 
-This is a set of tutorials I created for my [Getting Started with Docker](http://code4projects.altervista.org/series/getting-started-with-docker/) series on Code4Projects website. The goal of the series is to show you how I use Docker in my day by day job. To do that I created a set of tutorials that, step by step, show you how to create and deploy a complex application with Docker.
+This is a set of tutorials I created for my [Getting Started with Docker](http://code4projects.altervista.org/series/getting-started-with-docker/) series on [Code4Projects](http://code4projects.altervista.org) website. The goal of the series is to show you how I use Docker in my day by day job. To do that I created a set of tutorials that, step by step, show you how to create and deploy a complex application with Docker.
 
 As example, I decided to show you how to create a PostgreSQL cluster starting from a simple "Hello World!" application to a whole PostgreSQL cluster.
 
