@@ -14,4 +14,9 @@ In this tutorial, I will show you how to create a simple "Hello World!" applicat
 
 ## PostgreSQL
 
-In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on 432 port.
+In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on 5432 port.
+
+## PostgreSQL nodes in network
+
+In this tutorial, I will show you how to create three containers with a PostgreSQL instance running in that communicate each other via TCP/IP. Once the container are up and running you can access to one of them with the command ```docker exec -it nodeX /bin/bash```, where X could be 1, 2, or 3, and ping the other nodes with the command ```ping nodeX```. This tutorial will be the starting point to create the PostgreSQL cluster in the next tutorial.
+
