@@ -8,15 +8,15 @@ The application you choose to learn Docker is not very important, what is really
 
 The following is a list of tutorials.
 
-## Hello World
+## 1) Hello World
 
 In this tutorial, I will show you how to create a simple "Hello World!" application. We will create a container with a Web Server (Nginx) listeining on port 80. When the container will be up and running we can connect to it via browser and the "Hello World!" message will appear in it.
 
-## PostgreSQL
+## 2) PostgreSQL
 
 In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on 5432 port.
 
-## PostgreSQL nodes in network
+## 3) PostgreSQL nodes in network
 
 In this tutorial, I will show you how to create three containers with a PostgreSQL instance running in that communicate each other via TCP/IP. Once the container are up and running you can access to one of them with the command ```docker exec -it nodeX /bin/bash```, where X could be 1, 2, or 3, and ping the other nodes with the command ```ping nodeX```. This tutorial will be the starting point to create the PostgreSQL cluster in the next tutorial.
 
