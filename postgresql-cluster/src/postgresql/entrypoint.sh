@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-echo "$NODE_NAME" > /home/postgres/out2.log
 echo '>>> CONFIGURE POSTGRESQL ...'
 /usr/local/bin/cluster/postgresql/bin/entrypoint.sh $NODE_NAME & wait ${!}
 
