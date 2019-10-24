@@ -1,7 +1,7 @@
 # PostgreSQL node names
-NODE1_NAME=node1
-NODE2_NAME=node2
-NODE3_NAME=node3
+NODE1_NAME=pgmaster
+NODE2_NAME=pgslave1
+NODE3_NAME=pgslave2
 
 # Nodes private ips
 NODE1_PRIVATE_IP=10.0.2.31
