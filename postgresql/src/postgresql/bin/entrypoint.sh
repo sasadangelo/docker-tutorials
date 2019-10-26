@@ -1,3 +1,4 @@
+#!/bin/bash
 echo ">>> CREATE DATA DIRECTORY ON MASTER NODE"
 /usr/lib/postgresql/9.5/bin/initdb -D /home/postgres/data
 

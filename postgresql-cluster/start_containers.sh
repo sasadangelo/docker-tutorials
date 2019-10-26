@@ -18,6 +18,7 @@ PRIVATE_NETWORK_NAME=node_private_bridge
 # Create a private network
 docker network create -d bridge --gateway=10.0.2.1 --subnet=10.0.2.1/24 ${PRIVATE_NETWORK_NAME}
 
+# Create the PostgreSQL containers and start them
 docker create -it --net ${PRIVATE_NETWORK_NAME} --ip ${NODE1_PRIVATE_IP} --hostname ${NODE1_NAME} --name ${NODE1_NAME} --env NODE_NAME=${NODE1_NAME} -p ${NODE1_PORT}:5432 postgresql /bin/bash
 docker create -it --net ${PRIVATE_NETWORK_NAME} --ip ${NODE2_PRIVATE_IP} --hostname ${NODE2_NAME} --name ${NODE2_NAME} --env NODE_NAME=${NODE2_NAME} -p ${NODE2_PORT}:5432 postgresql /bin/bash
 docker create -it --net ${PRIVATE_NETWORK_NAME} --ip ${NODE3_PRIVATE_IP} --hostname ${NODE3_NAME} --name ${NODE3_NAME} --env NODE_NAME=${NODE3_NAME} -p ${NODE3_PORT}:5432 postgresql /bin/bash

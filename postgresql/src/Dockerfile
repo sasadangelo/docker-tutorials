@@ -2,8 +2,9 @@
 FROM ubuntu:16.04
 
 # Update Ubuntu Software repository. This is required to install packages.
-# Install the PostgreSQL package.
-RUN apt-get update && apt-get install -y postgresql
+# Install the following packages:
+RUN apt-get update && apt-get install -y postgresql iputils-ping net-tools \
+	netcat vim
 
 # Create the folder for data directory
 RUN mkdir -p /home/postgres/data && \

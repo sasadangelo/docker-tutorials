@@ -1,3 +1,5 @@
+# PostgreSQL node name
+NODE1_NAME=node1
 # Stop the node and drop it
-docker stop node1
-docker rm node1
+docker stop ${NODE1_NAME}
+docker rm ${NODE1_NAME}

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 echo '>>> CONFIGURE POSTGRESQL ...'
-/usr/local/bin/cluster/postgresql/bin/entrypoint.sh $NODE_NAME & wait ${!}
+/usr/local/bin/cluster/postgresql/bin/entrypoint.sh & wait ${!}
 
 EXIT_CODE=$?
 
