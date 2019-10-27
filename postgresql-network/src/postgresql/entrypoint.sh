@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo '>>> CONFIGURE POSTGRESQL ...'
+echo '>>> STARTUP POSTGRESQL ...'
 /usr/local/bin/cluster/postgresql/bin/entrypoint.sh & wait ${!}
 
 EXIT_CODE=$?

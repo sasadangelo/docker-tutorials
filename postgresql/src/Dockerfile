@@ -7,11 +7,11 @@ RUN apt-get update && apt-get install -y postgresql iputils-ping net-tools \
 	netcat vim
 
 # Create the folder for data directory
-RUN mkdir -p /home/postgres/data && \
-	mkdir -p /home/postgres/logs && \
+RUN mkdir -p /home/postgres/data/postgres && \
+	mkdir -p /home/postgres/data/logs && \
 	mkdir -p /usr/local/bin/cluster/postgresql && \
 	chown -R postgres:staff /home/postgres/ && \
-	chmod 700 /home/postgres/data
+	chmod 700 /home/postgres/data/postgres
 
 # Switch to postgresql user
 USER postgres
