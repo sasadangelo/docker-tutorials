@@ -31,3 +31,12 @@ psql -h localhost -p 5432 -U postgres
 ```
 
 and start using it.
+
+## Cleanup
+
+You can cleanup the container and the image with the following commands.
+
+```
+1. ./stop_containers.sh
+2. ./clean_image.sh
+```
