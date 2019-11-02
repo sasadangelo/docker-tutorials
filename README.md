@@ -30,6 +30,8 @@ To run a demo of the tutorial read the instructions [here](https://github.com/sa
 
 The tutorial will show you how to create three containers with PostgreSQL configured in cluster. The cluster has a master node and two slaves, whatever update you'll apply on master will be replicated on slaves.
 
+To run a demo of the tutorial read the instructions [here](https://github.com/sasadangelo/docker-tutorials/tree/master/postgresql-cluster).
+
 ## 5) PostgreSQL cluster - separate data from binary with Docker volumes
 
 The cluster in tutorial 4 has problems with two important scenarios:
