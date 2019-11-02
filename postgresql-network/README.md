@@ -31,3 +31,11 @@ You can access to a node (i.e. node1) and ping another node (i.e. node2).
 2. ping node2
 ```
 
+## Cleanup
+
+You can cleanup the containers and the image with the following commands.
+
+```
+1. ./stop_containers.sh
+2. ./clean_image.sh
+```
