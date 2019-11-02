@@ -55,3 +55,5 @@ In the previous tutorials, we used the following scripts to manage the Docker im
 - stop_containers.sh
 
 There is a better way to manage images and containers in Docker when the containers live on the same host: Docker Compose. The following tutorial shows how to replace those scripts with a single YAML file and use the command ```docker-compose up```to start all the containers and ```docker-compose down```to destroy them.
+
+To run a demo of the tutorial read the instructions [here](https://github.com/sasadangelo/docker-tutorials/tree/master/postgresql-cluster-compose).
