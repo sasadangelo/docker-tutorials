@@ -41,6 +41,8 @@ The cluster in tutorial 4 has problems with two important scenarios:
 
 the root cause of these problems is that binary code and data are stored in the same containers. Basically, the containers are not stateless. To solve the issue we need to separate data from binary using the Docker volumes.
 
+To run a demo of the tutorial read the instructions [here](https://github.com/sasadangelo/docker-tutorials/tree/master/postgresql-cluster-volume).
+
 ## 5) PostgreSQL cluster with Docker compose
 
 In the previous tutorials, we used the following scripts to manage the Docker image and containers and avoid to remember all the required Docker commands:
