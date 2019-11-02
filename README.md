@@ -12,6 +12,8 @@ The following is the list of tutorials.
 
 In this tutorial, I will show you how to create a simple "Hello World!" application. We will create a container with a Web Server (Nginx) listeining on port 80. When the container will be up and running we can connect to it via browser and the "Hello World!" message will appear in it.
 
+To run a demo of the tutorial read the instructions here.
+
 ## 2) PostgreSQL
 
 In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on local 5432 port mapped on the same host port.
