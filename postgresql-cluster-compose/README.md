@@ -33,10 +33,15 @@ psql -h localhost -p 5434 -U postgres
 
 ## Cleanup
 
-You can cleanup the containers with the command:
+You can cleanup the containers with the following command.
 
 ```
 docker-compose down
 ```
 
-If you want to remove the volumes you can add the -v option.
+If you want to remove the volumes you can add the -v option. To remove the image use the following command.
+
+```
+docker image rm -f postgresql
+```
+
