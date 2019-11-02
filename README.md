@@ -18,6 +18,8 @@ To run a demo of the tutorial read the instructions [here](https://github.com/sa
 
 In this tutorial, I will show you how to create a container with a PostgreSQL instance running in it and listening on local 5432 port mapped on the same host port.
 
+To run a demo of the tutorial read the instructions [here](https://github.com/sasadangelo/docker-tutorials/tree/master/postgresql-cluster).
+
 ## 3) PostgreSQL nodes in network
 
 In this tutorial, I will show you how to create three containers with a PostgreSQL instance running in it, that communicate each other via TCP/IP. Once the containers are up and running, you can access to one of them with the command ```docker exec -it nodeX /bin/bash```, where X could be 1, 2, or 3, and ping the other nodes with the command ```ping nodeX```. 
