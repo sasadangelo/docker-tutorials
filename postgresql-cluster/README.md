@@ -1,6 +1,6 @@
-# PostgreSQL
+# PostgreSQL cluster
 
-This tutorial shows how to create a dockerized PostgreSQL application. The PostgreSQL application instance will listen on 5432 port where you can connect with ```psql``` command.
+This tutorial shows how to create a PostgreSQL cluster with three containers.
 
 ## Prerequisites
 
@@ -24,10 +24,10 @@ The following are the instructions to run the demo.
 5. ./start_containers.sh
 ```
 
-You can connect to PostgreSQL with the following command:
+You can connect to PostgreSQL instances with one of the following commands.
 
 ```
 psql -h localhost -p 5432 -U postgres
+psql -h localhost -p 5433 -U postgres
+psql -h localhost -p 5434 -U postgres
 ```
-
-and start using it.
