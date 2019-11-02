@@ -32,7 +32,7 @@ The tutorial will show you how to create three containers with PostgreSQL config
 
 To run a demo of the tutorial read the instructions [here](https://github.com/sasadangelo/docker-tutorials/tree/master/postgresql-cluster).
 
-## 5) PostgreSQL cluster - separate data from binary with Docker volumes
+## 5) PostgreSQL cluster - Make containers stateless with Docker volumes
 
 The cluster in tutorial 4 has problems with two important scenarios:
 
