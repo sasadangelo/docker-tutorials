@@ -34,3 +34,14 @@ The cluster in tutorial 4 has problems with two important scenarios:
 the root cause of these problems is that binary code and data are stored in the same containers. Basically, the containers are not stateless. To solve the issue we need to separate data from binary using the Docker volumes.
 
 ## 5) PostgreSQL cluster with Docker compose
+
+In the previous tutorials, we used the following scripts to manage the Docker image and containers and avoid to remember all the required Docker commands:
+
+- build_image.sh
+- clean_image.sh
+- build_volumes.sh
+- clean_volumes.sh
+- start_containers.sh
+- stop_containers.sh
+
+There is a better way to manage images and containers in Docker when the containers live on the same host: Docker Compose. The following tutorial shows how to replace those scripts with a single YAML file and use the command ```docker-compose up```to start all the containers and ```docker-compose down```to destroy them.
