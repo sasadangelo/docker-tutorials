@@ -30,3 +30,13 @@ psql -h localhost -p 5432 -U postgres
 psql -h localhost -p 5433 -U postgres
 psql -h localhost -p 5434 -U postgres
 ```
+
+## Cleanup
+
+You can cleanup the containers with the command:
+
+```
+docker-compose down
+```
+
+If you want to remove the volumes you can add the -v option.
