@@ -71,20 +71,23 @@ The failover scenario switches the master from node1 to node2 (or node3). The st
    exit
    ```
 4. make sure the other slave (node3) follow the new master
-  a. stop node3
+  - stop node3
    ```
    docker stop node3
    docker container rm -f node3
    ```
-  b. replicate the data directory from the new master
+  - replicate the data directory from the new master
    ```
    docker run -it --name node3 --net net_private_cluster --ip 10.0.2.33 -p 5434:5432 -v volume3:/home/postgres/data --entrypoint "/bin/bash" postgresql
    rm -rf /home/postgres/data/postgres/*
    pg_basebackup -h node2 -p 5432 -U postgres -D /home/postgres/data/postgres/ -X stream -P
    ```
-  c. configure recovery.conf
-  d. create node3
-  e. start node3
+  - configure recovery.conf
+  - create node3
+  - start node3
+   ```
+   docker start node3
+   ```
 5. make sure the old master (node1) follow the new master
   a. stop node1
   b. configure recovery.conf
@@ -92,7 +95,7 @@ The failover scenario switches the master from node1 to node2 (or node3). The st
   d. create node3
   e. start node3
 
-Steps 5a, 5b, 5c, 5d and 5e are similar to 4a, 4b, 4c, 4d, and 4e.
+Steps 5 are similar to 4.
 
 ## Test the failover
 
