@@ -100,7 +100,7 @@ The failover scenario switches the master from node1 to node2 (or node3). The st
 
 Steps 5 are similar to 4.
 
-## Test the failover
+### Test the failover
 
 In order to test the cluster is working after failover you can create a table for mydb database and verify it is replicated on other slaves. The test assume you already created the mydb database the first time you created the cluster.
 
