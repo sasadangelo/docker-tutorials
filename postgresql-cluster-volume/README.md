@@ -84,6 +84,9 @@ The failover scenario switches the master from node1 to node2 (or node3). The st
    ```
   - configure recovery.conf
   - create node3
+   ```
+  docker create -it --net net_private_cluster --ip 10.0.2.33 --hostname node3 --name node3 --env NODE_NAME=node3 --env MASTER_NAME=node2 -p 5434:5432 -v volume3:/home/postgres/data postgresql /bin/bash
+   ```
   - start node3
    ```
    docker start node3
@@ -98,6 +101,8 @@ The failover scenario switches the master from node1 to node2 (or node3). The st
 Steps 5 are similar to 4.
 
 ## Test the failover
+
+In order to test the cluster is working after failover you can create a table for mydb database and verify it is replicated on other slaves. The test assume you already created the mydb database the first time you created the cluster.
 
 ```
 psql -h localhost -p 5433 -U postgres -d mydb
