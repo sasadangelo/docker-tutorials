@@ -12,3 +12,12 @@ The following are the instructions to run the demo.
 ```
 
 Open the browser and type "localhost" in the address bar. The "Hello World!" message will appear.
+
+## Cleanup
+
+The following are the instructions to cleanup your docker environment.
+
+```
+1. docker container rm -f hello-world
+2. docker image rm -f sasadangelo/hello-world
+```
