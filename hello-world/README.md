@@ -14,7 +14,7 @@ The following are the instructions to run the demo.
 5. ./start_containers.sh
 ```
 
-Open the browser and type "localhost" in the address bar. The "Hello World!" string will appear.
+Open the browser and type "localhost" in the address bar. The "Hello World!" message will appear.
 
 ## Cleanup
 
