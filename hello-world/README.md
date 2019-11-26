@@ -8,7 +8,7 @@ The following are the instructions to run the demo.
 
 ```
 1. docker pull sasadangelo/hello-world
-2. docker run --name hello-world -p 80:80 sasadangelo/hello-world
+2. docker run -d --name hello-world -p 80:80 sasadangelo/hello-world
 ```
 
 Open the browser and type "localhost" in the address bar. The "Hello World!" message will appear.
