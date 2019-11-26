@@ -7,7 +7,7 @@ This is your first Docker "Hello World" application. It is an Nginx web server t
 The following are the instructions to run the demo.
 
 ```
-1. get pull sasadangelo/hello-world
+1. docker pull sasadangelo/hello-world
 2. docker run --name hello-world -p 80:80 sasadangelo/hello-world
 ```
 
