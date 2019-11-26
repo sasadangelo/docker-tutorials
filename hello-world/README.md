@@ -13,6 +13,8 @@ The following are the instructions to run the demo.
 
 Open the browser and type "localhost" in the address bar. The "Hello World!" message will appear.
 
+![Hello World](http://code4projects.altervista.org/wp-content/uploads/2018/06/DockerHelloWorld.jpg)
+
 ## Cleanup
 
 The following are the instructions to cleanup your docker environment.
