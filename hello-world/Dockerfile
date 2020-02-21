@@ -11,4 +11,4 @@ COPY ./www-data /home/www/www-data
 # Expose port 80
 EXPOSE 80
 # Run nginx
-CMD ["nginx"]
+CMD ["/usr/sbin/nginx"]
